@@ -1,139 +1,329 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>London Worm Club</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #4a7c59;
-            color: white;
-            padding: 2rem;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        header p {
-            margin: 0.5rem 0 0;
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-        main {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        section {
-            background: white;
-            border-radius: 8px;
-            padding: 1.5rem 2rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
-        }
-        section h2 {
-            color: #4a7c59;
-            margin-top: 0;
-        }
-        footer {
-            text-align: center;
-            padding: 1.5rem;
-            font-size: 0.9rem;
-            color: #666;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div style="display: flex; align-items: center; justify-content: center; gap: 1.5rem;">
-            <img src="Worm_club_logo_final.png" alt="London Worm Club logo" style="height: 120px; border-radius: 50%;">
-            <div style="text-align: left;">
-                <h1 style="margin: 0; font-size: 2.5rem;">London Worm Club</h1>
-                <p style="margin: 0.5rem 0 0; font-size: 1.1rem; opacity: 0.9;">A community for <em>C. elegans</em> researchers in London</p>
-            </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>London Worm Club — <i>C. elegans</i> researchers in London</title>
+    <meta
+      name="description"
+      content="A community for C. elegans researchers in London and surrounding areas, with meetings 2–3 times per year."
+    />
+    <link rel="canonical" href="./index.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="London Worm Club — C. elegans researchers in London" />
+    <meta
+      property="og:description"
+      content="A community for C. elegans researchers in London and surrounding areas, with meetings 2–3 times per year."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="./assets/Worm_club_logo_final.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "London Worm Club",
+        "description": "A community for <i>C. elegans</i> researchers in London and surrounding areas.",
+        "areaServed": "London, UK"
+      }
+    </script>
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <div class="wrap header-inner">
+          <a class="brand" href="./index.html">
+            <img src="./assets/Worm_club_logo_final.png" alt="London Worm Club logo" width="816" height="816" />
+            <span>London Worm Club</span>
+          </a>
+          <nav class="nav-desktop" aria-label="Main">
+            <a href="./meetings.html">Meetings</a>
+            <a href="./index.html#about-section">About</a>
+            <a href="./index.html#get-involved">Get Involved</a>
+          </nav>
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+            data-nav-toggle
+          >
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" style="width: 1.25rem; height: 1.25rem">
+              <path d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
         </div>
-    </header>
-    <main>
-        <section>
-            <h2>Welcome</h2>
-            <p>
-                Welcome to the London Worm Club! We are a community of researchers
-                working with <em>Caenorhabditis elegans</em> across London and surrounding areas. Our goal is
-                to foster collaboration, share knowledge, and support the worm research
-                community in and around the city.
+        <nav class="nav-mobile" id="mobile-nav" aria-label="Main">
+          <a href="./meetings.html">Meetings</a>
+          <a href="./index.html#about-section">About</a>
+          <a href="./index.html#get-involved">Get Involved</a>
+        </nav>
+      </header>
+
+      <main>
+        <!-- Hero -->
+        <section class="hero bg-deep">
+          <img
+            class="hero-img"
+            src="./assets/hero-microscopy.jpg"
+            alt="Darkfield microscopy image of Caenorhabditis elegans nematodes"
+            width="1920"
+            height="1280"
+          />
+          <div class="hero-veil"></div>
+          <div class="wrap hero-body">
+            <p class="eyebrow teal-soft"><i>C. elegans</i> research · London, UK</p>
+            <h1>London Worm Club</h1>
+            <p class="hero-sub">A community for <i>C. elegans</i> researchers in London</p>
+            <p class="hero-lede">
+              We bring together researchers working with <i>Caenorhabditis elegans</i> across London
+              and surrounding areas — to foster collaboration, share knowledge and support the
+              worm research community.
             </p>
+            <div class="hero-actions">
+              <a class="btn btn-amber" href="./meetings.html">
+                Explore Meetings
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+              </a>
+              <a class="btn btn-ghost" href="#get-involved">Join the Community</a>
+            </div>
+            <img
+              class="hero-logo"
+              src="./assets/Worm_club_logo_final.png"
+              alt="London Worm Club logo"
+              width="1254"
+              height="1254"
+            />
+          </div>
+          <svg class="worm-line" style="bottom: 0; height: 7rem; opacity: 0.4" viewBox="0 0 1200 200" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0 140 C 120 20, 220 20, 330 110 S 540 210, 660 110 S 880 10, 1000 90 S 1140 170, 1200 120" stroke-width="2" stroke-linecap="round" />
+            <path d="M0 168 C 130 60, 230 56, 340 142 S 550 238, 670 140 S 890 44, 1010 120 S 1145 196, 1200 150" stroke-width="1" stroke-opacity="0.45" stroke-linecap="round" />
+          </svg>
         </section>
-        <section>
-            <h2>Meetings</h2>
-            <p>
-                Our main activity is organising meetings 2-3 times per year where worm researchers can present their work,
-                discuss ideas, and network with other members of the community. These meetings are open to all members of the
-                London worm community (and anyone else who can make it along for the day!), and we encourage everyone to attend and participate.
-            </p>
-            <p>
 
-                Recent meetings have included:
-
-                <br><br><strong>Apr 27 2026 (Francis Crick Institute):</strong> 
-
-                <br/><a href="LWM 27th April 26 Agenda.pdf"><b>Agenda</b></a>  
-
-                <ul>
-                    <li>Shruti Apurva (Barrios Lab), UCL</li>
-                    <li>William Schafer, MRC Laboratory of Molecular Biology, Cambridge, UK; KU Leuven</li>
-                    <li>Erik Griffin, University of Warwick</li>
-                    <li>Saman Rashid (Dimitriadi Lab),  University of Hertfordshire</li>
-                </ul>
-
-    
-            </p>
+        <!-- Next meeting -->
+        <section class="section" id="meetings">
+          <div class="wrap">
+            <div class="section-head">
+              <p class="eyebrow teal">Meetings</p>
+              <h2>Our next meeting</h2>
+              <p class="intro">
+                We organise meetings 2–3 times per year where worm researchers can present their
+                work, discuss ideas and connect with the community.
+              </p>
+            </div>
+            <div class="grid-stack">
+              <article class="surface-card meeting">
+                <div class="meeting-grid">
+                  <div class="meeting-date bg-deep">
+                    <span class="eyebrow teal-soft">Next meeting</span>
+                    <div>
+                      <p class="day">04</p>
+                      <p class="my">November 2026</p>
+                    </div>
+                  </div>
+                  <div class="meeting-body">
+                    <h3>MRC Laboratory of Medical Sciences</h3>
+                    <div class="meeting-meta">
+                      <span>
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" /></svg>
+                        4 November 2026
+                      </span>
+                      <span>
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0Z" /><circle cx="12" cy="10" r="3" /></svg>
+                        <a href="https://maps.app.goo.gl/B2eCsEm551Vxxf9i7">Hammersmith Campus</a>
+                      </span>
+                    </div>
+                    <a class="btn btn-outline" href="./docs/sad_worm.png" target="_blank">
+                      View agenda
+                      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10" /></svg>
+                    </a>
+                    <ul class="speakers">
+                      <li><p class="name">Speakers to be announced.</p></li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <a class="link-arrow" href="./meetings.html">
+              All meetings
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+          </div>
         </section>
-        <section>
-            <h2>About Us</h2>
-            <p>
-                The London Worm Club brings together labs and researchers from universities
-                and institutes across London. We organise regular meetings, seminars, and
-                social events for the <em>C. elegans</em> community.
-            </p>
-            <p>
-                The current organising committee consists of:
-                <ul>
-                    <li>Matan-Elle Cohen (UCL)</li>
-                    <li>Anna Gavrilova (UCL)</li>
-                    <li>Padraig Gleeson (UCL)</li>
-                    <li>Om Patange (UCL)</li>
-                    <li>Julia Riedl (MRC LMS)</li>
-                    <li>Samuel Rigg (UCL)</li>
-                </ul>
-            </p>
-            <p>
-                Past members of the organising committee have included:
-                <ul>
-                    <li>Mar Ferrando Marco (Imperial College)</li>
-                    <li>Arantza Barrios (UCL)</li>
-                    <li>Andre Brown (Imperial College/MRC LMS)</li>
-                </ul>
-            </p>
+
+        <!-- Community pillars -->
+        <section class="section muted">
+          <div class="wrap">
+            <div class="section-head">
+              <p class="eyebrow teal">Why join?</p>
+              <h2>A community, not just a mailing list</h2>
+            </div>
+            <div class="grid-3">
+              <div class="surface-card pillar">
+                <span class="badge">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" style="width:1.25rem;height:1.25rem"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13A4 4 0 0 1 16 11" /></svg>
+                </span>
+                <h3>Connect</h3>
+                <p>Meet other <i>C. elegans</i> researchers from across London.</p>
+              </div>
+              <div class="surface-card pillar">
+                <span class="badge">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" style="width:1.25rem;height:1.25rem"><path d="M2 3h20M4 3v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3M12 16v5M8 21h8" /></svg>
+                </span>
+                <h3>Share</h3>
+                <p>Present research, discuss ideas and exchange knowledge.</p>
+              </div>
+              <div class="surface-card pillar">
+                <span class="badge">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" style="width:1.25rem;height:1.25rem"><rect x="9" y="2" width="6" height="6" rx="1" /><rect x="2" y="16" width="6" height="6" rx="1" /><rect x="16" y="16" width="6" height="6" rx="1" /><path d="M12 8v4M5 16v-2h14v2" /></svg>
+                </span>
+                <h3>Collaborate</h3>
+                <p>Build connections between labs, institutes and researchers.</p>
+              </div>
+            </div>
+          </div>
         </section>
-        <section>
-            <h2>Get Involved</h2>
-            <p>
-                If you are a worm researcher based in London and would like to join our
-                community, please join our mailing list <a href="https://groups.google.com/g/london_elegans">here</a>. All are welcome, from PhD students to
-                principal investigators!
-            </p>
+
+        <!-- About -->
+        <section class="section" id="about-section">
+          <div class="wrap">
+            <div class="two-col about-layout">
+              <div class="about-copy">
+                <div class="section-head">
+              <p class="eyebrow teal">About</p>
+              <h2>About the London Worm Club</h2>
+              <p class="intro">
+                The London Worm Club brings together labs and researchers from universities and
+                institutes across London and the wider area. We organise regular meetings, seminars and social events
+                for the <i>C. elegans</i> community.
+              </p>
+                </div>
+                <div class="prose">
+                <p>
+                  Meetings are open to all members of the London worm community — and anyone else
+                  who can make it along for the day. Whether you are starting your first worm
+                  experiment or running a lab, there is a place for you here!
+                </p>
+                <div class="stats">
+                  <div class="rule-left"><p class="k">2–3</p><p class="v">meetings per year</p></div>
+                  <div class="rule-left"><p class="k">Open</p><p class="v">to all career stages</p></div>
+                  <div class="rule-left"><p class="k">London</p><p class="v">and surrounding areas</p></div>
+                </div>
+                </div>
+              </div>
+              <div class="club-logo-feature">
+                <img
+                  src="./assets/Worm_club_logo_final.png"
+                  alt="London Worm Club logo"
+                  width="1254"
+                  height="1254"
+                />
+              </div>
+            </div>
+          </div>
         </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 London Worm Club</p>
-    </footer>
-</body>
+
+        <!-- Committee -->
+        <section class="section muted" id="committee">
+          <div class="wrap">
+            <div class="section-head">
+              <p class="eyebrow teal">Organising committee</p>
+              <h2>Meet the organisers</h2>
+              <p class="intro">
+                The club is run by researchers, for researchers. Get in touch with any of us if you
+                would like to speak, host a meeting or help out.
+              </p>
+            </div>
+            <div class="grid-cards" data-committee></div>
+            <div class="collapsible">
+              <button class="collapsible-trigger" type="button" aria-expanded="false" aria-controls="past-committee" data-collapsible>
+                Past committee members
+                <svg class="icon chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+              <div class="collapsible-content" id="past-committee" hidden>
+                <ul class="past-list" data-past-committee></ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Get involved -->
+        <section class="join bg-deep" id="get-involved">
+          <div class="grid-texture"></div>
+          <svg class="worm-line" style="bottom: 0; height: 10rem; opacity: 0.3" viewBox="0 0 1200 200" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0 140 C 120 20, 220 20, 330 110 S 540 210, 660 110 S 880 10, 1000 90 S 1140 170, 1200 120" stroke-width="2" stroke-linecap="round" />
+          </svg>
+          <div class="join-inner">
+            <p class="eyebrow teal-soft">Get involved</p>
+            <h2>Join the London Worm Club</h2>
+            <p class="lede">
+              If you are a worm researcher based in London and would like to join our community,
+              please join our mailing list. All are welcome, from PhD students to principal
+              investigators!
+            </p>
+            <a class="btn btn-amber" href="https://groups.google.com/g/london_elegans">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="m22 7-10 6L2 7" /></svg>
+              Join the Mailing List
+            </a>
+          </div>
+        </section>
+
+        <!-- Partners -->
+        <section class="section">
+          <div class="wrap">
+            <div class="section-head">
+              <p class="eyebrow teal">Sponsors &amp; partners</p>
+              <h2>Support the worm community</h2>
+              <p class="intro">
+                Supporting the London Worm Club means supporting the wider <i>C. elegans</i> research
+                community. If your organisation would like to sponsor a future meeting, we would
+                love to hear from you.
+              </p>
+            </div>
+            <div class="partners">
+              <div class="partner-sponsor">
+                <div class="partner-slot">
+                  <img class="partner-logo" src="./assets/GS-Logo.png" alt="The Genetics Society" width="1773" height="638" />
+                </div>
+                <p class="sponsor-name">The Genetics Society</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer bg-deep">
+        <svg class="worm-line" style="top: 0; height: 6rem; opacity: 0.25" viewBox="0 0 1200 200" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0 140 C 120 20, 220 20, 330 110 S 540 210, 660 110 S 880 10, 1000 90 S 1140 170, 1200 120" stroke-width="2" stroke-linecap="round" />
+        </svg>
+        <div class="footer-inner">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <div class="brand">
+                <img src="./assets/Worm_club_logo_final.png" alt="" width="816" height="816" loading="lazy" />
+                <span>London Worm Club</span>
+              </div>
+              <p class="footer-tag">A community for <i>C. elegans</i> researchers in London</p>
+            </div>
+            <nav class="footer-nav" aria-label="Footer">
+              <a href="./meetings.html">Meetings</a>
+              <a href="./index.html#about-section">About</a>
+              <a href="./index.html#get-involved">Get Involved</a>
+            </nav>
+          </div>
+          <p class="footer-legal">© 2026 London Worm Club</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./main.js" defer></script>
+  </body>
 </html>
