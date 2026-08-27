@@ -754,6 +754,9 @@ main {
   font-weight: 600;
   color: var(--primary);
 }
+.person .person-photo {
+  object-fit: cover;
+}
 .person .who {
   min-width: 0;
 }
