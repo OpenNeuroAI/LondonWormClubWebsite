@@ -1,12 +1,12 @@
 /* London Worm Club — static site behaviour and shared data rendering. */
 
 const committee = [
-  { name: "Matan-Elle Cohen", affiliation: "UCL" },
-  { name: "Anna Gavrilova", affiliation: "UCL" },
-  { name: "Padraig Gleeson", affiliation: "UCL" },
-  { name: "Om Patange", affiliation: "UCL" },
-  { name: "Julia Riedl", affiliation: "MRC LMS" },
-  { name: "Samuel Rigg", affiliation: "UCL" },
+  { name: "Matan-Elle Cohen", affiliation: "UCL", photo: "./assets/committee/Matan-Elle Cohen.jpeg" },
+  { name: "Anna Gavrilova", affiliation: "UCL", photo: "./assets/committee/Anna Gavrilova.PNG" },
+  { name: "Padraig Gleeson", affiliation: "UCL", photo: "./assets/committee/Padraig Gleeson.png" },
+  { name: "Om Patange", affiliation: "UCL", photo: "./assets/committee/Om Patange.png" },
+  { name: "Julia Riedl", affiliation: "MRC LMS", photo: "./assets/committee/Julia Riedl.jpg" },
+  { name: "Samuel Rigg", affiliation: "UCL", photo: "./assets/committee/Samuel Rigg.jpg" },
 ];
 
 const pastCommittee = [
@@ -30,7 +30,9 @@ function renderCommittee() {
       .map(
         (person) => `
         <div class="surface-card person">
-          <span class="initials" aria-hidden="true">${initials(person.name)}</span>
+          ${person.photo
+            ? `<img class="initials person-photo" src="${person.photo}" alt="${person.name}" width="96" height="96" />`
+            : `<span class="initials" aria-hidden="true">${initials(person.name)}</span>`}
           <div class="who">
             <p class="name">${person.name}</p>
             <p class="aff">${person.affiliation}</p>
